@@ -1,0 +1,534 @@
+:root {
+/*---primary colors---*/
+    ---lightred:hsl(356, 100%, 66%);
+    ---verylightred:hsl(355, 100%, 74%);
+    ---verydarkblue:hsl(208, 49%, 24%);
+/*---Neutral colors---*/
+    ---grayishblue:hsl(240, 49%, 24%);
+    ---verydarkgrayishblue:hsl(207, 13%, 34%);
+    ---verydarkblackblue:hsl(240, 10%, 16%);
+/*---background gradient mobile---*/
+    ---verylightred0:hsl(13, 100%, 72%);
+    ---lightred0:hsl(353, 100%, 62%);
+/*---background gradient body---*/
+    ---verydarkgrayblue:hsl(13, 100%, 72%);
+    ---verydarkdesatblue:hsl(237, 23%, 32%);
+/*---FONTS FAMILY---*/
+    ---overpass:[Overpass](https://fonts.google.com/specimen/Overpass?preview.text_type=custom);
+    ---ubuntu:[Ubuntu](https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom);
+}
+body {
+  margin: 0px;
+  background-color: white;
+  font-family: helvetica;
+}
+#pagehome {
+    font-family: helvetica;
+    height:600px;
+}
+#box1 {
+    height:530px;
+    background-color:var(---verylightred0);
+    background: linear-gradient(to right, var(---verylightred0), var(---lightred0));
+    border-bottom-left-radius: 100px;
+}
+#innerbx1 {
+    height:inherit;
+    width:inherit;
+    background-image: url(bg-pattern-intro-desktop.svg);
+    background-position:28%;
+    background-repeat: no-repeat;
+    background-size: 190%;
+}
+#headerbx {
+    height: 110px;
+    padding: 5px;
+    display:flex;
+}
+#bx1left {
+   height:50px;
+   width:60%;
+   display:flex;
+   padding-top: 50px;
+}
+#bx1right {
+    height:inherit;
+    width:40%;
+}
+#hbt {
+    color:white;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-left: 40px;
+}
+#hbt:hover {
+    text-decoration: underline;
+    cursor:pointer;
+}
+#hbt-text {
+    margin-right: 4px;
+}
+#logo {
+    width:100px;
+    height:40px;
+    margin-left:15%;
+}
+#login, #signup, #sff, #lm {
+    height:40px;
+    width:130px;
+    margin-top:50px;
+    border-radius: 20PX;
+    background-color: white;
+    border:none;
+    font-size: 16px;
+    font-weight: 600;
+}
+#login, #lm {
+    margin-left:12%;
+    background-color: transparent;
+    color:white;
+}
+#lm {
+    border:1px solid white;
+    margin-left:5px;
+}
+#lm:hover {
+   border:none;
+   background-color: white;
+   color:var(---lightred0)
+}
+#login:hover {
+    border:1px solid white;
+    cursor:pointer;
+}
+#signup, #sff {
+    color:var(---lightred0)
+}
+#signup:hover, #sff:hover {
+    background-color:rgba(255, 255, 255, 0.439);
+    color:white;
+    cursor:pointer;
+}
+#bx1body {
+    color:white;
+    display:grid;
+    height:408px;
+    text-align: center;
+    place-content: center;
+}
+#bx1headtext {
+    font-size: 50px;
+}
+#bx1headpara {
+    font-size: 18px;
+}
+#hammenu {
+    display:none;
+    margin-top:29px;
+    background-color: transparent;
+    border:none;
+
+}
+#hamimg {
+    height:30px;
+    width:40px;
+}
+#info {
+    height:598px;
+    margin-right:51%;
+    display:grid;
+    min-height: 600px;
+    place-content: center;
+}
+#info2 {
+    height:598px;
+    margin-left:51%;
+    display:grid;
+    min-height: 600px;
+    place-content: center;
+}
+#illust1 {
+    height:598px;
+    float:right;
+    width:50%;
+    clear: both;
+    background-image: url(illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-size:627px;
+    background-position: 170px;
+}
+#illust3 {
+    height:598px;
+    float:left;
+    width:50%;
+    clear: both;
+    background-image: url(illustration-laptop-desktop.svg);
+    background-repeat: no-repeat;
+    background-size:627px;
+    background-position: -170px;
+}
+#infosub {
+   display:flex;
+   flex-direction: column;
+   width:87%;
+   margin-left: 14%;
+}
+#infosub2 {
+    display:flex;
+    flex-direction: column;
+    width:87%;
+    margin-left: 14%;
+ }
+#infohead, #infohead2 {
+    font-size: 24px;
+    color:var(---verydarkblue);
+    font-weight:600;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+#infopara {
+    font-size: 16px;
+}
+#sechead {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    width:331px;
+    left:50%;
+    margin-left: -165.5px;
+    margin-top:80px;
+    color:var(---verydarkblue);
+}
+#box2 {
+    margin-top: 30px;
+    height:250px;
+    background-color: var(---verydarkdesatblue);
+    background: linear-gradient(to right, var(---verydarkblackblue), var(---verydarkdesatblue));
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+}
+#innerbx2 {
+    height:inherit;
+    background-image: url(bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left bottom;
+}
+
+#illust2 {
+    width:340px;
+    height:420px;
+    background-image: url(illustration-phones.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    position:absolute;
+    top:1190px;
+    left:10%;
+}
+#bx2sub {
+    height:inherit;
+    width:inherit;
+    display:flex;
+    flex-direction: column;
+    place-content: center;
+    color:white;
+    padding-left: 50%;
+}
+#bx2head {
+    font-size: 24px;
+    /* margin-top:10px; */
+    margin-bottom: 23px;
+}
+#bx2para {
+    font-size: 14px;
+    line-height: 20px;
+    width:400px;
+    color:rgb(223, 223, 223);
+}
+#footerbox {
+    height:300px;
+    background-color: var(---verydarkblackblue);
+    border-top-right-radius:90px;
+    display:flex;
+    flex-direction: row;
+    place-content: center;
+}
+#ftlogo {
+    width:90px;
+    height:40px;
+    margin-top:50px;
+}
+#ftbx {
+    display:flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-left:5%;
+
+}
+#fthead {
+    font-size: 18px;
+    color:white;
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+a {
+    text-decoration: none;
+    margin-top: 10px;
+}
+#ftpara {
+    font-size:13px;
+    color:rgb(185, 185, 185);
+}
+#ftpara:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#dcsub {
+    width:140px;
+    height:120px;
+    background-color: white;
+    display:none;
+    border-radius: 4px;
+    position: absolute;
+}
+#clink {
+    color:var(---verydarkblue);
+}
+#clink:hover {
+    cursor: pointer;
+    color:black;
+    font-weight: 600;
+}
+#c {
+    margin-left: 10px;
+}
+#hamMenu {
+    position:absolute;
+    height: 600px;
+    top:100px;
+    width:80%;
+    left:50%;
+    margin-left:-40%;
+    background-color: white;
+    display:none;
+    place-content: center;
+    text-align: center;
+    border-radius:7px;
+}
+#hambt {
+    color:var(---verydarkblue);
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#hamcs {
+    color:var(---verydarkblue);
+    display:none;
+    text-align: center;
+    height:150px;
+    width:250px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 7px;
+    font-size: 22px;
+}
+#hamline {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width:100%;
+    height:1px;
+    background-color: rgb(165, 165, 165);
+}
+#hamlogin, #hamsign {
+    height:45px;
+    width:150px;
+    border-radius:30px;
+    place-self: center;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 24px;
+    color:var(---verydarkblue);
+}
+
+#hamsign {
+    background-color:var(---verylightred0) ;
+    background: linear-gradient(to right, var(---verylightred), var(---lightred0));
+    color:white;
+}
+
+
+
+
+
+
+
+/* ------MEDIA QUERIES------- */
+@media (max-width:821px) {
+    #illust2 {
+        left:5%;
+    }   
+}
+@media (max-width:911px) {
+    #hbt {
+        margin-left:20px;
+    }
+    #logo {
+        margin-left:5%;
+    }
+    #sechead {
+        margin-top: 55px;
+    }
+}
+@media (max-width:790px) {
+    #login {
+        margin-left:5%;
+    }
+}
+@media (max-width:751px) {
+    #illust1 {
+        height:400px;
+        float:none;
+        width:100%;
+        background-image: url(illustration-editor-mobile.svg);
+        background-position:center;
+        background-size: contain;
+    }
+    #illust3 {
+        height:400px;
+        float:none;
+        width:100%;
+        background-image: url(illustration-laptop-mobile.svg);
+        background-position:center;
+        background-size: contain;
+    }
+    #box1 {
+        height:650px;
+    }
+    #pagehome {
+        height:700px;
+    }
+    #info {
+        width:100%;
+        height:340px;
+        place-content: top center;
+    }
+    #infohead2 {
+        margin-top:5px;
+    }
+    #infosub {
+        width:80%;
+        margin-left:0%;
+        text-align: center;
+        place-self: center;
+        line-height: 25px;
+    }
+    #info2 {
+        width:100%;
+        height:340px;
+        display:grid;
+        place-items: center;
+        margin-left: 0%;
+    }
+    #infosub2 {
+        width:80%;
+        margin-left:0%;
+        text-align: center;
+        place-self: center;
+        line-height: 25px;
+    }
+    #infopara {
+        font-size: 18px;
+    }
+    #sechead {
+        top:698px;
+        margin-top: 0px;
+        font-size: 24px;
+        width:265px;
+        margin-left: -132.5px;
+    }
+    #innerbx1 {
+        background-image: url(bg-pattern-intro-mobile.svg);
+    }
+    #hbt {
+        display:none;
+    }
+    #login, #signup {
+        display:none;
+    }
+    #bx1right, #bx1left {
+        width:50%;
+    }
+    #bx1right {
+        display:flex;
+        place-content: right;
+    }
+    #hammenu {
+        display:block;
+        margin-left: 75%;
+    }
+    #bx1headetext {
+        font-size: 70px;
+    }
+    #bx1headpara {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #bx2sub {
+        padding-left: 0%;
+    }
+    #bx2head {
+        margin-top: 115px;
+    }
+    #bx2head, #bx2para {
+        text-align: center;
+    }
+    #bx2para {
+        place-self: center;
+        width:70%;
+        line-height: 30px;
+        font-size: 17px;
+    }
+    #box2 {
+        margin-top: 190px;
+        height:500px;
+    }
+    #illust2 {
+        top:1750px;
+        left:10.5%;
+    }
+    #footerbox {
+        height:720px;
+        display:grid;
+        min-height: 740px;
+        place-content: center;
+    }
+    #ftbx {
+        width:200px;
+        padding: 0px;
+        text-align: center;
+        place-self: center;
+    }
+    #fthead {
+        font-size: 20px;
+    }
+    #ftpara {
+        font-size: 20px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    #ftimg {
+        display:GRID;
+        place-content: center;
+    }
+    #ftlogo {
+        margin-left:10px;
+    }
+    #dcsub {
+        position: none;
+    }
+}
+@media (max-width:435px) {
+    #hammenu {
+        display:block;
+        margin-left: 69%;
+    }
+}
