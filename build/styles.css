@@ -303,7 +303,7 @@ a {
     margin-left: 10px;
 }
 #hamMenu {
-    position:absolute;
+    position:fixed;
     height: 600px;
     top:100px;
     width:80%;
